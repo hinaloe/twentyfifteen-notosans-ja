@@ -31,11 +31,15 @@ TwentyFifteen に使用されている `Noto Sans` 及び `Noto Serif` を `Noto
 
 == Screenshots ==
 
+1. With Noto Sans Japanese
+2. Visual editor support
+3. Change font weight in Customizer
+
 == Changelog ==
 
 = 0.1.0 =
 * Custom font weight
-* TinyMCE Injection
+* TinyMCE Integration
 * Refactor
 
 
