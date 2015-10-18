@@ -33,6 +33,12 @@ TwentyFifteen に使用されている `Noto Sans` 及び `Noto Serif` を `Noto
 
 == Changelog ==
 
+= 0.1.0 =
+* Custom font weight
+* TinyMCE Injection
+* Refactor
+
+
 = 0.0.1 =
 * Initial release.
 

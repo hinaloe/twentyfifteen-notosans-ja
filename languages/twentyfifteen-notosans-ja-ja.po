@@ -3,18 +3,46 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Twentyfifteen Noto Sans Japanese 0.0.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/twentyfifteen-"
-"notosans-ja\n"
-"POT-Creation-Date: 2015-10-11 15:40+0900\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/twentyfifteen-notosans-ja\n"
+"POT-Creation-Date: 2015-10-18 21:01+0900\n"
+"PO-Revision-Date: 2015-10-18 21:07+0900\n"
+"Last-Translator: hinaloe <hina@hinaloe.net>\n"
+"Language-Team: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-10-11 15:42+0900\n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.5\n"
-"Last-Translator: hinaloe <hina@hinaloe.net>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language: ja\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: *.css\n"
+
+#: admin/customizer.php:5
+msgid "Font"
+msgstr "フォント"
+
+#: admin/customizer.php:6
+msgid "Adjust font"
+msgstr "フォントの調整"
+
+#: admin/customizer.php:21
+msgid "Font Weight"
+msgstr "フォントウェイト"
+
+#: admin/customizer.php:23
+msgid "Weight of normal font"
+msgstr "通常のフォントのウェイト(太さ)"
+
+#: admin/customizer.php:37
+msgid "Font Weight (bold)"
+msgstr "フォントウェイト(Bold)"
+
+#: admin/customizer.php:39
+msgid "Weight of bold font"
+msgstr "全ての太文字のウェイト(太さ)"
 
 #. Plugin Name of the plugin/theme
 msgid "Twentyfifteen Noto Sans Japanese"
@@ -26,9 +54,7 @@ msgstr "https://blog.hinaloe.net/"
 
 #. Description of the plugin/theme
 msgid "The font of TwentyFifteen is changed to a Japanese Gothic font."
-msgstr ""
-"TwentyFifteen のフォントを Noto Sans Japanese (日本語ゴシック体フォント) "
-"に変更します。"
+msgstr "TwentyFifteen のフォントを Noto Sans Japanese (日本語ゴシック体フォント) に変更します。"
 
 #. Author of the plugin/theme
 msgid "Hinaloe"

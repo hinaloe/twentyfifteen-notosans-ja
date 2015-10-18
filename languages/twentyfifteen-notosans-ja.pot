@@ -3,8 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Twentyfifteen Noto Sans Japanese 0.0.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/twentyfifteen-notosans-ja\n"
-"POT-Creation-Date: 2015-10-11 06:38:32+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/twentyfifteen-"
+"notosans-ja\n"
+"POT-Creation-Date: 2015-10-18 11:57:42+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,6 +13,29 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
+#: admin/customizer.php:5
+msgid "Font"
+msgstr ""
+
+#: admin/customizer.php:6
+msgid "Adjust font"
+msgstr ""
+
+#: admin/customizer.php:21
+msgid "Font Weight"
+msgstr ""
+
+#: admin/customizer.php:23
+msgid "Weight of normal font"
+msgstr ""
+
+#: admin/customizer.php:37
+msgid "Font Weight (bold)"
+msgstr ""
+
+#: admin/customizer.php:39
+msgid "Weight of bold font"
+msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "Twentyfifteen Noto Sans Japanese"
