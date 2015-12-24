@@ -17,6 +17,8 @@ This plugin replace TwentyFifteen's **Noto** font to *Noto Sans Japanese* web fo
 
 This plugin only works TwentyFifteen and it's child theme.
 
+This plugin is published on [GitHub](https://github.com/hinaloe/twentyfifteen-notosans-ja).
+
 ----
 
 TwentyFifteen に使用されている `Noto Sans` 及び `Noto Serif` を `Noto Sans Japanese` に置き換えます。本来セリフ・明朝の部分もゴシック体になるのでご注意下さい。
