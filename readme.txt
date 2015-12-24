@@ -47,7 +47,3 @@ TwentyFifteen に使用されている `Noto Sans` 及び `Noto Serif` を `Noto
 
 = 0.0.1 =
 * Initial release.
-
-== Upgrade Notice ==
-
-== Arbitrary section ==
