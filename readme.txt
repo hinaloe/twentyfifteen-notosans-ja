@@ -39,6 +39,9 @@ TwentyFifteen に使用されている `Noto Sans` 及び `Noto Serif` を `Noto
 
 == Changelog ==
 
+= 0.1.1 =
+* Change text domain
+
 = 0.1.0 =
 * Custom font weight
 * TinyMCE Integration
