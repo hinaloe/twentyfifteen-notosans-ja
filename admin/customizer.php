@@ -4,8 +4,8 @@ if ( ! function_exists( 'add_action' ) ) {
 }
 function tfnsj_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'fonts', array(
-		'title' => __( 'Font', 'twentyfifteen-notosans-ja' ),
-		'description' => __( 'Adjust font', 'twentyfifteen-notosans-ja' ),
+		'title' => __( 'Font', 'twentyfifteen-notosans_ja' ),
+		'description' => __( 'Adjust font', 'twentyfifteen-notosans_ja' ),
 		'priority' => 45,
 		'capability' => 'edit_theme_options',
 
@@ -19,9 +19,9 @@ function tfnsj_customize_register( $wp_customize ) {
 	));
 
 	$wp_customize->add_control( 'tf_font_weight[normal]', array(
-		'label' => __( 'Font Weight', 'twentyfifteen-notosans-ja' ),
+		'label' => __( 'Font Weight', 'twentyfifteen-notosans_ja' ),
 		'type' => 'select',
-		'description' => __( 'Weight of normal font', 'twentyfifteen-notosans-ja' ),
+		'description' => __( 'Weight of normal font', 'twentyfifteen-notosans_ja' ),
 		'choices' => tfnsj_fontweight_list(),
 		'section' => 'fonts',
 		'priority' => 1,
@@ -35,9 +35,9 @@ function tfnsj_customize_register( $wp_customize ) {
 	));
 
 	$wp_customize->add_control( 'tf_font_weight[bold]', array(
-		'label' => __( 'Font Weight (bold)', 'twentyfifteen-notosans-ja' ),
+		'label' => __( 'Font Weight (bold)', 'twentyfifteen-notosans_ja' ),
 		'type' => 'select',
-		'description' => __( 'Weight of bold font', 'twentyfifteen-notosans-ja' ),
+		'description' => __( 'Weight of bold font', 'twentyfifteen-notosans_ja' ),
 		'choices' => tfnsj_fontweight_list(),
 		'section' => 'fonts',
 		'priority' => 2,
@@ -79,4 +79,3 @@ function tfnsj_font_sanitize_weight( $input ) {
 		return 400;
 	}
 }
-
