@@ -2,7 +2,7 @@
 Contributors: hnle
 Tags: font,  Google fonts, noto sans, japanese, twentyfifteen
 Requires at least: 4.1
-Tested up to: 4.4
+Tested up to: 4.6
 Stable tag: trunk
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
