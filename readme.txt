@@ -39,6 +39,10 @@ TwentyFifteen に使用されている `Noto Sans` 及び `Noto Serif` を `Noto
 
 == Changelog ==
 
+= 0.1.3 =
+* Tested up WP 4.6
+* Update Plugin URI
+
 = 0.1.2 =
 * Re-Change text domain (to same as slug)
 
