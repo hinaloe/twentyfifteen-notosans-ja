@@ -39,6 +39,9 @@ TwentyFifteen に使用されている `Noto Sans` 及び `Noto Serif` を `Noto
 
 == Changelog ==
 
+= 0.1.2 =
+* Re-Change text domain (to same as slug)
+
 = 0.1.1 =
 * Change text domain
 
