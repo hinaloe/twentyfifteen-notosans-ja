@@ -22,16 +22,25 @@ if ( ! function_exists( 'twentyfifteen_fonts_url' ) ) :
 	function twentyfifteen_fonts_url() {
 		return twentyfifteen_fonts_ja_url();
 	}
-	endif;
+endif;
+
 function twentyfifteen_fonts_ja_url() {
 	return plugins_url( 'noto-sans-japanese.css', __FILE__ );
 }
 
-function tfnsj_font_weight_css() {
+/**
+ * Generate plugin stylesheet
+ *
+ * @param bool $important for editor.
+ *
+ * @return bool|string
+ */
+function tfnsj_font_weight_genearate_css( $important = false ) {
 	if ( $weights = get_option( 'tf_font_weight' ) ) {
 		$css = '';
+		$important = $important ? '!important' : '';
 		if ( isset( $weights['normal'] ) ) {
-			$w = $weights['normal'];
+			$w = filter_var( $weights['normal'], FILTER_VALIDATE_INT );
 			$css .= <<<CSS
 body,
 button,
@@ -46,7 +55,7 @@ blockquote b,
 .image-navigation .nav-previous:not(:empty) + .nav-next:not(:empty):before,
 .comment-navigation .nav-previous:not(:empty) + .nav-next:not(:empty):before,
 .site-description {
-	font-weight: ${w}
+	font-weight: ${w} ${important}
 }
 
 
@@ -63,7 +72,7 @@ blockquote b,
 CSS;
 		}
 		if ( isset( $weights['bold'] ) ) {
-			$w = $weights['bold'];
+			$w = filter_var( $weights['bold'], FILTER_VALIDATE_INT );
 			$css .= <<<CSS
 h1,
 h2,
@@ -96,37 +105,50 @@ input[type="submit"],
 .widecolumn label,
 .widecolumn .mu_register label,
 dt {
-	font-weight: ${w}
+	font-weight: ${w} ${important}
 }
 CSS;
 
 		}
 
-		// var_dump($css);
+		return $css;
+	}
+
+	return false;
+}
+
+/**
+ * Add plugin inline style
+ */
+function tfnsj_font_weight_css() {
+	$css = tfnsj_font_weight_genearate_css();
+	if ( $css ) {
 		wp_add_inline_style( 'twentyfifteen-style', $css );
 	}
 }
 
+/**
+ * Load plugin textdomain.
+ */
 function tfnsj_load_textdomain() {
-	  load_plugin_textdomain( 'twentyfifteen-noto-sans-jp' );
-
+	load_plugin_textdomain( 'twentyfifteen-noto-sans-jp' );
 }
 
-	// function twentyfifteen_enque_ja_css() {
-	// 	if ( wp_style_is( 'twentyfifteen-fonts' ) ) {
-	// 		wp_deregister_style( 'twentyfifteen-fonts' );
-	// 		wp_enqueue_style( 'twentyfifteen-fonts', twentyfifteen_fonts_ja_url(), array(), null );
-	// 	} else if ( wp_style_is( 'twentyfifteen-fonts', 'registered' ) ) {
-	// 		wp_deregister_style( 'twentyfifteen-fonts' );
-	// 		wp_register_style( 'twentyfifteen-fonts', twentyfifteen_fonts_ja_url(), array(), null );
-	// 	} else {
-	// 		wp_register_style( 'twentyfifteen-fonts', twentyfifteen_fonts_ja_url(), array(), null );
-	// 	}
+// function twentyfifteen_enque_ja_css() {
+// 	if ( wp_style_is( 'twentyfifteen-fonts' ) ) {
+// 		wp_deregister_style( 'twentyfifteen-fonts' );
+// 		wp_enqueue_style( 'twentyfifteen-fonts', twentyfifteen_fonts_ja_url(), array(), null );
+// 	} else if ( wp_style_is( 'twentyfifteen-fonts', 'registered' ) ) {
+// 		wp_deregister_style( 'twentyfifteen-fonts' );
+// 		wp_register_style( 'twentyfifteen-fonts', twentyfifteen_fonts_ja_url(), array(), null );
+// 	} else {
+// 		wp_register_style( 'twentyfifteen-fonts', twentyfifteen_fonts_ja_url(), array(), null );
+// 	}
 
-	// }
+// }
 
-	// add_action( 'wp_enqueue_scripts', 'twentyfifteen_enque_ja_css' );
-	add_action( 'wp_enqueue_scripts', 'tfnsj_font_weight_css', 11 );
-	add_action( 'plugins_loaded', 'tfnsj_load_textdomain' );
+// add_action( 'wp_enqueue_scripts', 'twentyfifteen_enque_ja_css' );
+add_action( 'wp_enqueue_scripts', 'tfnsj_font_weight_css', 11 );
+add_action( 'plugins_loaded', 'tfnsj_load_textdomain' );
 
 // }
