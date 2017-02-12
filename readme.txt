@@ -2,7 +2,7 @@
 Contributors: hnle
 Tags: font,  Google fonts, noto sans, japanese, twentyfifteen
 Requires at least: 4.1
-Tested up to: 4.6
+Tested up to: 4.7
 Stable tag: trunk
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -38,6 +38,11 @@ TwentyFifteen に使用されている `Noto Sans` 及び `Noto Serif` を `Noto
 3. Change font weight in Customizer
 
 == Changelog ==
+
+= 0.2.0 =
+* Don't use dynamic generate css file
+* remove unused commentout
+* delete translations file (use translate.w.org)
 
 = 0.1.3 =
 * Tested up WP 4.6
