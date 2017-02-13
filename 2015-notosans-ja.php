@@ -4,7 +4,7 @@
 Plugin Name: Twentyfifteen Noto Sans Japanese
 Plugin URI: https://hinaloe.net/portfolio/twentyfifteen-noto-sans-jp
 Description: The font of TwentyFifteen is changed to a Japanese Gothic font.
-Version: 0.2.0
+Version: 0.2.1
 Author: Hinaloe
 Author URI: https://hinaloe.net/
 Text Domain: twentyfifteen-noto-sans-jp
@@ -14,7 +14,9 @@ if ( ! function_exists( 'add_action' ) ) {
 }
 
 require_once( dirname( __FILE__ ) . '/admin/customizer.php' );
-if ( is_admin() ) { require_once( dirname( __FILE__ ) . '/admin/editor-style.php' ); }
+if ( is_admin() ) {
+	require_once( dirname( __FILE__ ) . '/admin/editor-style.php' );
+}
 
 if ( ! function_exists( 'twentyfifteen_fonts_url' ) ) :
 	function twentyfifteen_fonts_url() {
@@ -35,7 +37,7 @@ function twentyfifteen_fonts_ja_url() {
  */
 function tfnsj_font_weight_genearate_css( $important = false ) {
 	if ( $weights = get_option( 'tf_font_weight' ) ) {
-		$css = '';
+		$css       = '';
 		$important = $important ? '!important' : '';
 		if ( isset( $weights['normal'] ) ) {
 			$w = filter_var( $weights['normal'], FILTER_VALIDATE_INT );

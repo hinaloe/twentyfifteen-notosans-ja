@@ -1,4 +1,5 @@
 <?php
+
 if ( ! function_exists( 'add_action' ) ) {
 	exit;
 }
@@ -55,4 +56,4 @@ class TfNsJ_Admin_Style {
 	}
 }
 
-TfNsJ_Admin_Style::init();
+add_action( 'admin_init', array( 'TfNsJ_Admin_Style', 'init' ) );
